@@ -1,0 +1,123 @@
+<html> 
+    <script src="/joker/scripts-joker.js?v=1"></script>
+    <head>
+        <link rel="stylesheet" href="reset.css" />
+        <link rel="stylesheet" href="/joker/joker-styles.css">
+        <link rel="shortcut icon" type="image/jpeg" href="/joker/joker-icon.jpg"/>
+        <meta name="description" content="Spécialisé en menaces et arnaques, je fais aussi de l'animation pour les fêtes d'enfants." charset="utf-8"/>
+        <title>LE JOKER - Fouteur de trouble</title> 
+    </head>
+ 
+    <body onload="init()">
+        <div class="card">
+            <div class="container">
+                <div id="countdown"></div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="container">
+                <h1>MESSAGE DU JOKER</h1>
+                <hr />
+                <p>
+                    L'entreprise MicroMedica est maintenant sous mon emprise, j'ai aussi bitlocké tous vos cadeaux pour le party de Noël.
+                    MOUAAHAHAHAHAHAA!
+                </p>
+                <br />
+                <p>
+                    Plus personne ne peut vous aider, pas même le Sphynx, j'ai détruit son jet hier, triste histoire n'est-ce pas?
+                </p>
+                <hr />
+                <p>
+                    Pour éviter une mort atroce, ainsi que la destruction de tous vos cadeaux, vous devez me fournir les nom d'utilisateur Windows et mot de passe de tous les employés Micromedica avant la fin du décompte, sinon <strong>BOOM!</strong>.
+                </p>
+
+                <form onsubmit="event.preventDefault();">
+                    <div>
+                        <label for="username">Nom d'utilisateur :</label>
+                        <input type="text" id="username" name="username">
+                    </div>
+                    <div>
+                        <label for="password">Mot de passe :</label>
+                        <input type="text" id="password" name="password">
+                    </div>
+                    <div>
+                        <button id="add-username-password-button" class="button-36">AJOUTER</button>
+                    </div>
+                </form>
+
+                <dialog>
+                    <p id="dialog-message">Test</p>
+                    <button class="button-36" autofocus>Fermer</button>
+                </dialog>
+
+                <br />
+
+                <p>
+                    "Utilisateur | Mot de passe" récoltés jusqu'à maintenant : 
+                </p>
+                <hr />
+                <ul>
+                    <li>Yves Goulet | Sunshine123</li>
+                    <li>Steve Riley | T'es qui toé?</li>
+                    <li>Steve Lavoie | c3*eAJ_4[9tm4j=%36S4Q/MwYh?4xB</li>
+                    <li>Yves Lepine | PARTY</li>
+                    <li>Bernard Lavallée | 2L-2E</li>
+                    <li>Loïc Pleau | Écoute écoute écoute</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="container">
+                <h1>PUBLICITÉ</h1>
+                <hr />
+                <p>
+                    Vous connaissez peut-être les Software-as-a-Service (SaaS), Platform-as-a-Service (PaaS) ou Infrastructure-as-a-Service (Iaas), mais connaissez-vous Joker-as-a-Service (JaaS)?
+                </p>
+                <p>
+                    JaaS est le summum en terme de méchanceté, que vous planifiez un attentat, un meurtre, un enlèvement ou simplement une disparition suspecte, Joker Enr. et sa filière JaaS vous permet de louer les services d'un villain sur demande, sans aucun engagement de votre part. Voyez ces commentaires de clients satisfaits :
+                </p>
+                <div class="testimonial">
+                    <div class="shadow"></div>
+                    <span class="top border"></span>
+                    <h1 class="testimonial-title">⭐⭐⭐⭐⭐</h1>
+                    <p class="testimonial-message">JaaS, c'est de la bombe! Littéralement.</p>
+                    <p class="testimonial-source">&mdash; Sadam H.</p>
+                    <span class="bottom border"></span>
+                </div>
+                <div class="testimonial">
+                    <div class="shadow"></div>
+                    <span class="top border"></span>
+                    <h1 class="testimonial-title">⭐⭐⭐⭐</h1>
+                    <p class="testimonial-message">Joker a été très efficace, mais il n'est pas russe, j'ai enlevé une étoile pour cette raison.</p>
+                    <p class="testimonial-source">&mdash; Vladimir P.</p>
+                    <span class="bottom border"></span>
+                </div>
+                <div class="testimonial">
+                    <div class="shadow"></div>
+                    <span class="top border"></span>
+                    <h1 class="testimonial-title">⭐</h1>
+                    <p class="testimonial-message">Il se croit meilleur que tout le monde, mais je réussi toujours à le déjouer.</p>
+                    <p class="testimonial-source">&mdash; Sphynx</p>
+                    <span class="bottom border"></span>
+                </div>
+                <div class="testimonial">
+                    <div class="shadow"></div>
+                    <span class="top border"></span>
+                    <h1 class="testimonial-title">⭐⭐⭐⭐⭐</h1>
+                    <p class="testimonial-message">Le souper est prêt.</p>
+                    <p class="testimonial-source">&mdash; Maman.</p>
+                    <span class="bottom border"></span>
+                </div>
+                <hr />
+                <p>
+                    L'encryption de messages est un art que Joker Enr. et JaaS sont maîtres, nous avons nous-même développer notre propre système d'encryption impossible à décrypter.
+                </p>
+                <button id="joker-button" class="button-36" role="button">Testez notre encryption!</button>
+                <p id="uncrypted"></p> 
+                <p id="crypted"></p> 
+            </div>
+        </div>
+    </body>
+</html>
