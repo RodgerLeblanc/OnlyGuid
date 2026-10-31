@@ -7,7 +7,6 @@ A simple static website that generates and displays a unique GUID on every page 
 - **index.html**: Single `<h1 id="guid">` element with `onload="loadGuid()"` handler.
 - **scripts.js**: Two global functions—`loadGuid()` injects the GUID into `#guid`, `generateGuid()` produces a v4-style GUID via `crypto.getRandomValues()`.
 - **styles.css**: The only stylesheet to modify for visual changes.
-- **reset.css**: Standard CSS reset; do not read or edit.
 - **fingerprint.png**: Favicon.
 - **cgi-bin/**: Empty, unused directory.
 
