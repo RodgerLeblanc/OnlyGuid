@@ -29,7 +29,7 @@ A simple static website that generates and displays a unique GUID on every page 
 ## Development
 1. Edit files with your IDE.
 2. Open `index.html` in a browser to test. Refresh to see a new GUID.
-3. No tests, linters, or build commands.
+3. No linters or build commands. To verify GUID output, follow the [verify-guid skill](.github/skills/verify-guid/SKILL.md), which runs a headless Playwright check via `npx` without adding files to the repo.
 
 ## Agent Resources
 - [JavaScript rules](.github/instructions/javascript.instructions.md): applies to `**/*.js`.
